@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style="background-color: #242424" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 댓글 분석기</title>
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+
+</head>
+<body>
+  <script type="text/javascript" src="./js/main.js"></script>
+     <div id = "heder">
+        <div style="max-width: 1400px !important;" class="container">
+          <div class="row">
+            <div class="title">
+              <h1 id="title">유튜브 댓글 분석기</h1>
+            </div>
+            <div class = search_bar>
+              <form name="send_url" method="POST" action = '/result'>
+                <div class="form-row">
+                  <div class="col-12 col-md-9 mb-2 mb-md-0">
+                    <input id = 'url' type="text" class="form-control form-control-lg" placeholder="영상의 링크를 입력해주세요">
+                  </div>
+                  <div style="display: flex;width: 100% !important;" class="btn-div col-12 col-md-3">
+                    <button type="button" onclick="make_delete_div()" class="btn-new">입력</button>
+                    <button name="have_url" value="" type="submit" onclick="result_page()" class="btn-new" style="margin-left: 0.5rem;">결과 보기</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

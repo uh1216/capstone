@@ -1,0 +1,23 @@
+.btn-new{border-radius:.3rem;color:#fff;background-color:red;border: 0;outline: 0;width: 100%;font-size: 20px;}
+.btn-new-sr{margin-bottom: 3rem;border-radius:.3rem;color:#fff;background-color:red;border:0;outline: 0;width: 100%;font-size: 20px;}
+.con{display: flex;align-items: center;font-size: 24px;float: left;margin-left: 18rem;margin-top: 3rem;height: auto; width: 60%; border:2px solid white;background-color: orange;}
+.rcon_div_n{text-align: center;color: white;display: flex;font-size: 24px;float: left;height: auto; width: 5%;margin-right: 0.3rem; }
+.rcon_div_n_r{text-align: center;color: white;display: flex;font-size: 24px;float: left;height: auto; width: 5%;margin-right: 1.5rem; }
+.rcon_div_l{text-align: center;color: white;display: flex;font-size: 24px;float: left;height: auto; width: 45%;}
+.rcon_div_r{align-items: center;text-align: center;color: white;display: flex;font-size: 24px;float: right;height: auto; width: 50%;border-left: 2px solid white;}
+.rcon_div_top_l{background-color: white;font-weight: bold;padding-left: 11rem;text-align: center;color: black;display: flex;font-size: 24px;float: left;height: auto; width: 50.5%; border-top:1px solid black;border-bottom:1px solid black;border-left:2px solid black;border-right:2px solid black;}
+.rcon_div_top_r{background-color: white;font-weight: bold;padding-left: 11rem;text-align: center;color: black;display: flex;font-size: 24px;float: right;height: auto; width: 49.5%;border-right:1px solid black;border-bottom:1px solid black;border-top:1px solid black;}
+.rcon_top{text-align: center;display: flex;font-size: 24px;float: left;margin-left: 18rem;margin-top: 1rem;height: auto; width: 60%; border-bottom:2px solid white; border-top:2px solid white;border-left:2px solid white;border-right:2px solid white;}
+.rcon1{background-color: orange;align-items: center;text-align: center;color: white;display: flex;font-size: 24px;float: left;margin-left: 18rem;height: auto; width: 60%;border-bottom:2px solid white;border-left:2px solid white;border-right:2px solid white;}
+.rcon20{background-color: orange;align-items: center;color: white;display: flex;font-size: 24px;float: left;margin-left: 18rem;margin-bottom: 1rem;height: auto; width: 60%; border-bottom:2px solid white;border-left:2px solid white;border-right:2px solid white;}
+.rcon{background-color: orange;align-items: center;color: white;display: flex;font-size: 24px;float: left;margin-left: 18rem;height: auto; width: 60%;border-bottom: 2px solid white;border-left:2px solid white;border-right:2px solid white;}
+.srdiv{background-color: orange;color: white;display: flex;font-size: 24px;float: left;margin-left: 18rem;height: auto; width: 60%;border-bottom: 2px solid white;border-top:2px solid white;border-left:2px solid white;border-right:2px solid white;margin-bottom: 0.5rem;}
+.search_bar{margin-left: 15rem;width: 70% !important;align-content: center;}
+.title{text-align: center;width: 100%;color: white;margin-top: 10rem;margin-bottom: 3rem;}
+.rtitle{text-align: center;width: 100%;color: white;margin-top: 3rem;margin-bottom: 1rem;}
+.url-div{color: white;margin-left: 0.2rem;}
+#word{margin-bottom: 3rem;width: 90%;margin-left: 3rem;}
+#result_div{text-align: center;}
+#heder{height: auto;width: auto;background-color: #242424;align-content: center;margin-bottom: 5rem;}
+#url{ margin-left: 3rem;width: 90%;}
+#x_button{border-radius:.3rem;color:#242424;background-color:white;margin-left: auto;margin-right: 0.2rem;font-size: 20px;float: right;border: 0;outline: 0;}
