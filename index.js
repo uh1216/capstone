@@ -35,23 +35,19 @@ app.post('/result', function (req, res) {
         mode: 'json', 
         pythonPath: 'C:/Users/dnd/Anaconda3/python.exe', 
         pythonOptions: ['-u'], 
-        scriptPath: (__dirname) + '/public/python/', 
+        scriptPath: (__dirname) + '/public/python', 
         args: [url], 
         encoding: null,
     };
 
     PythonShell.run("temp.py", options, function(err, data) {
-        // for(var i = 0; i < 20; i++){
-        //     make_div.innerHTML = (i + 1) + '.' + data[0];
-        //     con.appendChild(make_div);
-        // }
-
+        if (err) throw err;
+        
         words = data[0];
         comments = data[1];
         full_comments = data[2];
         titles = data[3]
         
-        if (err) throw err;
         res.render('result', {'words' : words, 'comments' : comments, 'full_comments' : full_comments, 'titles' : titles});
     })
 })

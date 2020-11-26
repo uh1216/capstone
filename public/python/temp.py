@@ -17,7 +17,7 @@ def craw(url):
     options.add_argument('headless')
     options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.51')
     
-    driver = wd.Chrome(executable_path="C:/users/dnd/desktop/git etc/capstone/proto/public/python/chromedriver", options=options)
+    driver = wd.Chrome(executable_path="C:/users/dnd/desktop/git capstone/public/python/chromedriver", options=options)
     
     full_comments = []
     comments = []
@@ -34,7 +34,7 @@ def craw(url):
         
         while True: 
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);") 
-            time.sleep(5.0)
+            time.sleep(3.0)
             new_page_height = driver.execute_script("return document.documentElement.scrollHeight")
             
             if new_page_height == last_page_height:
@@ -79,6 +79,12 @@ def craw(url):
         
         
         hangul = re.compile('[가-힣]+')
+        emoji_pattern = re.compile("["
+        u"\U0001F600-\U0001F64F"  # emoticons
+        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+        u"\U0001F680-\U0001F6FF"  # transport & map symbols
+        u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                           "]+", flags=re.UNICODE)
         youtube_comments = soup.select('yt-formatted-string#content-text')
         
         tmp_comments = []
@@ -88,11 +94,16 @@ def craw(url):
             com_tmp = com_tmp.replace('\n', ' ')
             com_tmp = com_tmp.replace("'", '')
             com_tmp = com_tmp.replace('"', '')
+            com_tmp = com_tmp.replcae('(', '')
+            com_tmp = com_tmp.replcae(')', '')
+            com_tmp = com_tmp.replcae('-', '')
+            com_tmp = re.sub(emoji_pattern,'', com_tmp)
+            
             full_comments.append(com_tmp)
             tmp_comments.append(com_tmp)
             
             com_tmp = okt.nouns(com_tmp)              
-            com_tmp = re.findall(hangul, str(com_tmp))    
+            com_tmp = re.findall(hangul, str(com_tmp)) 
             str_youtube_comments.append(com_tmp)
     
         lnc = list(zip(likes, tmp_comments))
