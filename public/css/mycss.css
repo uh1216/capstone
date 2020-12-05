@@ -12,7 +12,7 @@
 .title{text-align: center;width: 100%;color: white;margin-top: 10rem;margin-bottom: 3rem;}
 .rtitle{text-align: center;width: 100%;color: white;margin-top: 3rem;margin-bottom: 1rem;}
 .url-div{color: white;margin-left: 0.2rem;}
-#result_page{width: 100%;height: auto;background-color: #c0c0c0;border:2px solid black;}
+#result_page{width: 100%;height: auto;background-color: #c0c0c0;}
 #word{width: 90%;margin-left: 4rem;margin-bottom: 1rem;}
 #result_div{text-align: center;}
 #heder{height: auto;width: auto;background-color: #242424;align-content: center;margin-bottom: 5rem;}
@@ -20,3 +20,4 @@
 #x_button{border-radius:.3rem;color:#242424;background-color:white;margin-left: auto;margin-right: 0.2rem;font-size: 20px;float: right;border: 0;outline: 0;}
 #show_words{display: flex;}
 #ws_result{overflow-y: auto;overflow-x: hidden;height: 500px;width: 100%;}
+#example{font-size: 18px;}

@@ -104,6 +104,7 @@ def craw(url):
             com_tmp = com_tmp.replace(';', '')
             com_tmp = com_tmp.replace('/', '')
             com_tmp = com_tmp.replace('~', '')
+            com_tmp = com_tmp.replace('`', '')
             com_tmp = re.sub(emoji_pattern,'', com_tmp)
             
             full_comments.append(com_tmp)
